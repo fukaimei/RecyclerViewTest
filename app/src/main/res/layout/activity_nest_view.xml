@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        app:bar_style="transparent"
+        app:icon_back="true" />
+
+    <include layout="@layout/item_loading_view" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMovieList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="3dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone" />
+
+</LinearLayout>
